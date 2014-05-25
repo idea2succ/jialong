@@ -1,0 +1,17 @@
+padrino g model User name:string email:string crypted_password:string salt:string mphone:string QQ:bigint role:string group:string wuye_id:integer xiaoqu_id:integer url_header:string verifiedbit:string verify_code:string  -a um
+
+
+D:\IdeaLab\jialong>padrino g admin_page user name:string email:string crypted_pa
+ssword:string salt:string mphone:string QQ:bigint role:string group:string wuye_
+id:integer xiaoqu_id:integer url_header:string verifiedbit:string verify_code:st
+ring
+
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/padrino-admin-0.12.1/lib/padrino-admin/gener
+ators/orm.rb:25:in `initialize': Model 'Name:string' could not be found! (Padrin
+o::Admin::Generators::OrmError)
+Perhaps you would like to run 'bundle exec padrino g model Name:string' to creat
+e it first?
+
+
+
+padrino start -a thin

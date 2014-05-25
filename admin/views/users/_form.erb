@@ -1,0 +1,113 @@
+<% error = @user.errors.key?(:name) && @user.errors[:name].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :name, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :name, :class => 'form-control input-xlarge input-with-feedback', :autofocus => true %>
+    <span class='help-inline'><%= error ? f.error_message_on(:name) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:email) && @user.errors[:email].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :email, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :email, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:email) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:crypted_password) && @user.errors[:crypted_password].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :crypted_password, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :crypted_password, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:crypted_password) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:salt) && @user.errors[:salt].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :salt, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :salt, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:salt) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:mphone) && @user.errors[:mphone].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :mphone, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :mphone, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:mphone) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:QQ) && @user.errors[:QQ].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :QQ, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_field :QQ, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:QQ) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:role) && @user.errors[:role].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :role, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :role, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:role) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:group) && @user.errors[:group].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :group, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :group, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:group) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:wuye_id) && @user.errors[:wuye_id].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :wuye_id, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_field :wuye_id, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:wuye_id) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:xiaoqu_id) && @user.errors[:xiaoqu_id].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :xiaoqu_id, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_field :xiaoqu_id, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:xiaoqu_id) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:url_header) && @user.errors[:url_header].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :url_header, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :url_header, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:url_header) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:verifiedbit) && @user.errors[:verifiedbit].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :verifiedbit, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :verifiedbit, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:verifiedbit) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+<% error = @user.errors.key?(:verify_code) && @user.errors[:verify_code].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+  <%= f.label :verify_code, :class => 'control-label' %>
+  <div class='controls'>
+    <%= f.text_area :verify_code, :class => 'form-control input-xlarge input-with-feedback' %>
+    <span class='help-inline'><%= error ? f.error_message_on(:verify_code) : "Ex: a simple text" %></span>
+  </div>
+</fieldset>
+
+
+<div class="form-actions">
+  <%= f.submit pat(:save), :class => 'btn btn-primary' %>
+  &nbsp;
+  <%= f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue' %>
+  &nbsp;
+  <%= link_to pat(:cancel), url(:users, :index), :class => 'btn btn-default' %>
+</div>

@@ -1,0 +1,10 @@
+---
+:orm: sequel
+:test: minitest
+:mock: none
+:script: jquery
+:renderer: erb
+:stylesheet: none
+:namespace: Jialong
+:migration_format: number
+:admin_renderer: erb
