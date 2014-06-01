@@ -1,13 +1,12 @@
 Jialong::Admin.controllers :accounts do
-  get :index do
- 
+  get :index do 
     @title = "Accounts"
     @accounts = Account.all
     render 'accounts/index'
   end
 
 
-  get("new") do
+  get :new do
     @title = pat(:new_title, :model => 'account')
     @account = Account.new
     render 'accounts/new'

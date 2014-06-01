@@ -30,7 +30,7 @@
         # For configure this role please refer to: +Padrino::Admin::AccessControl::Base+
         #
         def allowed?
-          access_control.allowed?(current_account, request.path_info)
+         access_control.allowed?(current_account, request.path_info)
         end
 
         ##
@@ -47,6 +47,7 @@
         # By default this method is used in Admin Apps.
         #
         def login_required
+          puts "allowed=#{allowed?}"
           unless allowed?
             store_location! if store_location
             access_denied

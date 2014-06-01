@@ -7,16 +7,16 @@
     <![endif]-->
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta name=viewport content='width=device-width,initial-scale=1' />
-    <title><%= @title.present? ? "#{@title} | Padrino Admin" : "Padrino Admin" %></title>
+    <title><%= @title.present? ? "#{@title} | Padrino Users" : "Padrino Users" %></title>
     <%= favicon_tag "favicon.ico" %>
-    <link href='http://fonts.googleapis.com/css?family=Varela' rel=stylesheet />
-    <%= stylesheet_link_tag 'bootstrap', 'application' %>
+    <!--link href='http://fonts.googleapis.com/css?family=Varela' rel=stylesheet /-->
+    <%= stylesheet_link_tag 'bootstrap', 'application','um' %>
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
       <div class=navbar-inner>
         <div class=container>
-          <%= link_to 'Padrino', url(:base, :index), :class => 'navbar-brand', :title => 'Padrino Admin' %>
+          <%= link_to 'Padrino', url(:base, :index), :class => 'navbar-brand', :title => 'Padrino Users' %>
           <ul class="nav navbar-nav pull-right">
             <li class=navbar-edit-account>
             <%unless current_account.nil?%>

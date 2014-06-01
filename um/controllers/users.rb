@@ -1,9 +1,5 @@
 Jialong::Um.controllers :users do
-  get :index do
-    @title = "Users"
-    @users = User.all
-    render 'users/index'
-  end
+
 
   get :new do
     @title = t("users.new_user")

@@ -1,17 +1,32 @@
+
+require File.join(File.dirname(__FILE__),"access_control_helper.rb")
+
 module Jialong
   class Um < Padrino::Application
     register Padrino::Mailer
     register Padrino::Helpers
+    register JiaLong::Um::AccessControl
+
     include Padrino::Admin::Helpers::ViewHelpers
-    include Padrino::Admin::AccessControl
+    #include Padrino::Admin::AccessControl
+
+
 
    # enable :sessions
 
     set :admin_model, 'User'
-    set :login_page,  '/um/sessions/new'
+    set :login_page,  '/sessions/new'
 
     enable  :sessions
     disable :store_location
+
+
+    access_control.roles_for :any do |role|
+      role.protect '/'
+      #Logger.info "hi role!"
+      #puts "hello roles 4"
+      role.allow   '/sessions'
+    end
 
     ##
     # Caching support.

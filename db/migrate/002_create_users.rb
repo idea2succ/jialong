@@ -8,13 +8,13 @@ Sequel.migration do
       String :salt
       String :mphone
       bigint :QQ
-      String :role
-      String :group
-      integer :wuye_id
-      integer :xiaoqu_id
-      String :url_header
-      String :verifiedbit
-      String :verify_code
+      String :role #默认角色
+      String :group # 默认group
+      integer :wuye_id  # 默认物业公司
+      integer :xiaoqu_id # 默认小区id
+      String :url_header #头像的URL地址
+      String :verifiedbit #校验位
+      String :verify_code #校验码
     end
   end
 
