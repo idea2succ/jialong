@@ -1,9 +1,27 @@
 <div>
 
-"hello"
+<%=@current_account.email%>, 您好！
+<br></br>
+<%=@current_account.avatar%>
+ <%= image_tag(@current_account.avatar_url(:normal)) if @current_account.avatar %>
 
+
+ <%#= link_to image_tag("avatar/#{@current_account.id}/Koala.jpg")%>
+欢迎来到首页，让我们共同打造一个：
+
+<div class="row">
+
+<ul>
+
+	<li>服务于小众的消息平台</li>
+	<li>服务于小众的活动平台</li>
+	<li>服务于小众的资讯平台</li>
+	<li>服务于小众的服务平台</li>
+
+</ul>
+</div>
 <%#=link_to url(:users, :edit, :id => @user.id)%>
 <%#=session[settings.session_id]%>
 <%#=@current_account.name%>
-<%=settings.login_page%>
+
 </div>

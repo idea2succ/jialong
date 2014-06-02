@@ -48,7 +48,13 @@
     <span class='help-inline'><%= error ? f.error_message_on(:url_header) : "Ex: a simple text" %></span>
   </div>
 </fieldset>
-
+<% error = @user.errors.key?(:avatar) && @user.errors[:avatar].count > 0 %>
+<fieldset class='control-group <%= error ? 'has-error' : ''%>'>
+ <div class='controls'>
+  <%=  f.file_field :avatar %>
+  <%= f.hidden_field :avatar_cache %>
+ </div>
+</fieldset>
 <div class="form-actions">
   <%= f.submit pat(:save), :class => 'btn btn-primary' %>
   &nbsp;

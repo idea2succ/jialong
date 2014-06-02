@@ -17,6 +17,7 @@
       <div class=navbar-inner>
         <div class=container>
           <%= link_to 'Padrino', url(:base, :index), :class => 'navbar-brand', :title => 'Padrino Users' %>
+
           <ul class="nav navbar-nav pull-right">
             <li class=navbar-edit-account>
             <%unless current_account.nil?%>
@@ -31,6 +32,9 @@
           </ul>
 
           <ul class="nav navbar-nav pull-left">
+          <li>
+           <%=link_to  tag_icon("home","首页"),url(:base,:index) %>
+          </li>
             <% project_modules.each do |project_module| %>
               <% if request.path_info =~ /^#{project_module.path}/ %>
                 <li class="navbar-module active">

@@ -1,16 +1,10 @@
 Jialong::Um.controllers :base do
   before do
-    #if  access_control.allowed?(current_account, '/um')
      login_required
-     puts "login Requireed2"
-   # end
  end
  
    get :index, :map => '/' do
-
-
      #session[:foo] = 'bar'
-     puts settings
      render 'index',nil,:layout=>"application"
      # "hello!"
    end

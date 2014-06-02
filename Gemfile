@@ -29,6 +29,11 @@ gem 'padrino', '0.12.1'
 #using new web server rather than webrick
 gem 'thin'
 
+gem 'carrierwave', '0.6.2'
+gem 'carrierwave-sequel', :require => 'carrierwave/sequel'
+#gem 'imagemagicks'
+#gem 'mini_magick', '~> 3.5.0' #不使用rmagick，占内存
+gem 'mini_magick','3.3', require: false
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
 
